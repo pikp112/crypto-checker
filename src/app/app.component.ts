@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  selectedCurrency: string = 'EURO';
+  selectedCurrency: string = 'EUR';
   constructor() {}
   sendCurrency(event: string){
     console.log(event);

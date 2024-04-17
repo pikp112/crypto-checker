@@ -6,7 +6,7 @@ import { CoinDetailComponent } from './coin-detail/coin-detail.component';
 const routes: Routes = [
   { path: '', redirectTo: '/coin-list', pathMatch: 'full'},
   { path: 'coin-list', component: CoinListComponent },
-  { path: 'coin-detail', component: CoinDetailComponent },
+  { path: 'coin-detail/:id', component: CoinDetailComponent },
   { path: '**', redirectTo: '/coin-list', pathMatch: 'full'}
 ];
 
