@@ -28,7 +28,7 @@ export class ApiService {
     }
   }
 
-  getGraphicalCurrencyData(coinId: string, currency: string, days: number): Observable<any> {
+  getGraphicalCurrencyData(coinId: number, currency: string, days: number): Observable<any> {
     const cachedData = localStorage.getItem('graphical_data_' + coinId);
     if (cachedData) {
       return of(JSON.parse(cachedData));
@@ -37,7 +37,7 @@ export class ApiService {
     }
   }
 
-  getCurrencyById(coinId: string): Observable<any> {
+  getCurrencyById(coinId: number): Observable<any> {
     const cachedData = localStorage.getItem('currency_by_id_' + coinId);
     if (cachedData) {
       return of(JSON.parse(cachedData));
